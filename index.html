@@ -6,17 +6,29 @@
   <title>ময়মনসিংহ জেলা কমিটির সদস্যবৃন্দ</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap');
+
     body {
       font-family: "Hind Siliguri", sans-serif;
-      background: #f4f6f8;
       margin: 0;
       padding: 30px 10px;
+      background: linear-gradient(135deg, #e3f2fd, #bbdefb, #e8f5e9);
+      background-attachment: fixed;
+      animation: gradientMove 15s ease infinite;
+      background-size: 400% 400%;
     }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
     h2 {
       text-align: center;
-      color: #2c3e50;
+      color: #1a5276;
       margin-bottom: 40px;
-      font-size: 28px;
+      font-size: 30px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
     }
 
     /* Committee Grid */
@@ -36,10 +48,13 @@
       text-align: center;
       padding: 30px 15px 25px;
       transition: transform 0.3s, box-shadow 0.3s;
+      border: 2px solid #e3f2fd;
     }
+
     .member:hover {
       transform: translateY(-6px);
-      box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+      box-shadow: 0 10px 25px rgba(52,152,219,0.3);
+      border-color: #64b5f6;
     }
 
     /* Circle Image with Border */
@@ -47,14 +62,16 @@
       width: 130px;
       height: 130px;
       border-radius: 50%;
-      border: 4px solid #3498db;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      border: 5px solid #3498db;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
       object-fit: cover;
       margin-bottom: 15px;
-      transition: transform 0.3s;
+      transition: transform 0.3s, border-color 0.3s;
     }
+
     .member:hover img {
-      transform: scale(1.05);
+      transform: scale(1.07);
+      border-color: #1e88e5;
     }
 
     /* Info */
@@ -63,6 +80,7 @@
       margin: 10px 0 5px;
       font-size: 20px;
     }
+
     .info p {
       margin: 3px 0;
       color: #555;
@@ -74,67 +92,30 @@
       display: inline-block;
       margin-top: 10px;
       padding: 8px 18px;
-      background: linear-gradient(135deg, #3498db, #2980b9);
+      background: linear-gradient(135deg, #42a5f5, #1e88e5);
       color: white;
       border-radius: 25px;
       text-decoration: none;
       font-size: 14px;
-      transition: background 0.3s;
+      transition: background 0.3s, transform 0.2s;
       cursor: pointer;
-    }
-    .details-btn:hover {
-      background: linear-gradient(135deg, #1f618d, #21618c);
     }
 
-    /* Modal Styles */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 999;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.6);
-      justify-content: center;
-      align-items: center;
+    .details-btn:hover {
+      background: linear-gradient(135deg, #1565c0, #0d47a1);
+      transform: scale(1.05);
     }
-    .modal-content {
-      background: white;
-      border-radius: 15px;
-      padding: 20px;
-      width: 90%;
-      max-width: 450px;
-      text-align: center;
-      animation: fadeIn 0.4s ease;
-      position: relative;
+
+    /* Optional Light Glow around Cards */
+    .member:hover {
+      box-shadow: 0 12px 25px rgba(33,150,243,0.25);
     }
-    @keyframes fadeIn {
-      from { transform: scale(0.8); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
-    }
-    .modal-content img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #3498db;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      margin-bottom: 15px;
-    }
-    .close {
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      font-size: 30px;
-      color: #333;
-      cursor: pointer;
-    }
+
   </style>
 </head>
 <body>
 
-  <h2>কমিটি সদস্যবৃন্দ</h2>
+  <h2>ময়মনসিংহ জেলা কমিটির সদস্যবৃন্দ</h2>
 
   <div class="committee">
 
@@ -152,9 +133,9 @@
     <div class="member">
       <img src="https://ik.imagekit.io/nasirbam/Member%20list/sohag.png?updatedAt=1751960846991" alt="Vice President">
       <div class="info">
-        <h3> জনাব মোঃ আজহারুল ইসলাম সোহাগ </h3>
+        <h3>জনাব মোঃ আজহারুল ইসলাম সোহাগ</h3>
         <p>সহ-সভাপতি</p>
-       <p>বাংলাদেশ নার্সেস এসোসিয়েশন (বিএনএ)</p>
+        <p>বাংলাদেশ নার্সেস এসোসিয়েশন (বিএনএ)</p>
         <p>ময়মনসিংহ জেলা শাখা</p>
         <a href="#" class="details-btn" target="_blank">বিস্তারিত</a>
       </div>
@@ -175,7 +156,7 @@
       <img src="https://ik.imagekit.io/nasirbam/Member%20list/masuma.png?updatedAt=1751960846833" alt="Assistant Secretary">
       <div class="info">
         <h3>মিসেস মাসুমা পারভীন</h3>
-        <p>কোষাধ্যক্ষ </p>
+        <p>কোষাধ্যক্ষ</p>
         <p>বাংলাদেশ নার্সেস এসোসিয়েশন (বিএনএ)</p>
         <p>ময়মনসিংহ জেলা শাখা</p>
         <a href="https://example.com/ruma" class="details-btn" target="_blank">বিস্তারিত</a>
@@ -186,7 +167,7 @@
       <img src="https://ik.imagekit.io/nasirbam/Member%20list/ahad.png?updatedAt=1751960846725" alt="Treasurer">
       <div class="info">
         <h3>জনাব আব্দুল আহাদ খান</h3>
-        <p>ছাত্র-ছা্ত্রী বিষয়ক প্রতিনিধি </p>
+        <p>ছাত্র-ছাত্রী বিষয়ক প্রতিনিধি</p>
         <p>বাংলাদেশ নার্সেস এসোসিয়েশন (বিএনএ)</p>
         <p>ময়মনসিংহ জেলা শাখা</p>
         <a href="https://example.com/jasim" class="details-btn" target="_blank">বিস্তারিত</a>
@@ -197,7 +178,7 @@
       <img src="https://ik.imagekit.io/nasirbam/Member%20list/deepu.png?updatedAt=1751960846717" alt="Member">
       <div class="info">
         <h3>মিসেস দীপু রায়</h3>
-        <p> স্বাস্থ্য পরিদর্শক ও মিডওয়াইফারি প্রতিনিধি</p>
+        <p>স্বাস্থ্য পরিদর্শক ও মিডওয়াইফারি প্রতিনিধি</p>
         <p>বাংলাদেশ নার্সেস এসোসিয়েশন (বিএনএ)</p>
         <p>ময়মনসিংহ জেলা শাখা</p>
         <a href="https://example.com/tania" class="details-btn" target="_blank">বিস্তারিত</a>
