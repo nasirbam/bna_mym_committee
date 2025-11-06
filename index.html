@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>কমিটি সদস্যবৃন্দ</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap');
+
+    body {
+      font-family: "Hind Siliguri", sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 30px 10px;
+    }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
+      font-size: 28px;
+    }
+    .committee {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .member {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .member:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+    }
+    .member img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .info {
+      padding: 15px;
+    }
+    .info h3 {
+      color: #1a5276;
+      margin: 10px 0 5px;
+      font-size: 20px;
+    }
+    .info p {
+      margin: 3px 0;
+      color: #555;
+      font-size: 15px;
+    }
+    .details-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 18px;
+      background: linear-gradient(135deg, #3498db, #2980b9);
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+    .details-btn:hover {
+      background: linear-gradient(135deg, #1f618d, #21618c);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>কমিটি সদস্যবৃন্দ</h2>
+
+  <div class="committee">
+
+    <div class="member">
+      <img src="https://via.placeholder.com/300x250.png?text=President" alt="President">
+      <div class="info">
+        <h3>জনাব মোঃ রফিকুল ইসলাম</h3>
+        <p>সভাপতি</p>
+        <p>বাংলাদেশ নার্সিং কলেজ</p>
+        <a href="https://example.com/rafiqul" class="details-btn" target="_blank">বিস্তারিত</a>
+      </div>
+    </div>
+
+    <div class="member">
+      <img src="https://via.placeholder.com/300x250.png?text=Vice+President" alt="Vice President">
+      <div class="info">
+        <h3>মিসেস শারমিন আক্তার</h3>
+        <p>সহ-সভাপতি</p>
+        <p>ঢাকা মেডিকেল কলেজ</p>
+        <a href="https://example.com/sharmin" class="details-btn" target="_blank">বিস্তারিত</a>
+      </div>
+    </div>
+
+    <div class="member">
+      <img src="https://via.placeholder.com/300x250.png?text=General+Secretary" alt="General Secretary">
+      <div class="info">
+        <h3>জনাব নাসির উদ্দিন</h3>
+        <p>সাধারণ সম্পাদক</p>
+        <p>সিআরপি নার্সিং কলেজ</p>
+        <a href="https://example.com/nasir" class="details-btn" target="_blank">বিস্তারিত</a>
+      </div>
+    </div>
+
+    <div class="member">
+      <img src="https://via.placeholder.com/300x250.png?text=Assistant+Secretary" alt="Assistant Secretary">
+      <div class="info">
+        <h3>মিসেস রুমা বেগম</h3>
+        <p>সহকারী সম্পাদক</p>
+        <p>ময়মনসিংহ নার্সিং কলেজ</p>
+        <a href="https://example.com/ruma" class="details-btn" target="_blank">বিস্তারিত</a>
+      </div>
+    </div>
+
+    <div class="member">
+      <img src="https://via.placeholder.com/300x250.png?text=Treasurer" alt="Treasurer">
+      <div class="info">
+        <h3>জনাব জসিম উদ্দিন</h3>
+        <p>কোষাধ্যক্ষ</p>
+        <p>রাজশাহী নার্সিং কলেজ</p>
+        <a href="https://example.com/jasim" class="details-btn" target="_blank">বিস্তারিত</a>
+      </div>
+    </div>
+
+    <div class="member">
+      <img src="https://via.placeholder.com/300x250.png?text=Member" alt="Member">
+      <div class="info">
+        <h3>মিসেস তানিয়া রহমান</h3>
+        <p>সদস্য</p>
+        <p>চট্টগ্রাম নার্সিং ইনস্টিটিউট</p>
+        <a href="https://example.com/tania" class="details-btn" target="_blank">বিস্তারিত</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
